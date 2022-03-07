@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+<body>
+    <div class="body__container">
+        <aside>
+            <form id="map-search-form">
+                <div class="form__container">
+                    <label for="origin">Starting Location: </label>
+                    <input type="search" name="origin" required />
+                    <label for="destination">Drop-off Point: </label>
+                    <input type="search" name="destination" required />
+                    <div class="btn__container">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </div>
+                </div>
+            </form>
+        </aside>
+        <main>
+            <div id="map"></div>
+        </main>
+    </div>
+    <div id="snackbar"></div>
+    
+    <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>
